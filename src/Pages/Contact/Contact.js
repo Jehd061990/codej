@@ -28,11 +28,11 @@ const Contact = () => {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
           setIsMessageSent(true);
         },
         (error) => {
           console.log("FAILED...", error.text);
+          alert("Failed to send");
         }
       );
   };
@@ -102,11 +102,16 @@ const Contact = () => {
                     name="from_email"
                     id=""
                     placeholder="Email-add"
+                    required
                   />
                 </div>
                 <div className="message">
                   <label htmlFor="e-message">MESSAGE</label>
-                  <textarea name="message" placeholder="Message"></textarea>
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
 
                   <div>
                     <button type="submit" value="Send">
