@@ -1,0 +1,632 @@
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* ------------------------- ABOUT PAGE ---------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
+.about-page {
+  background-color: var(--white);
+}
+
+.about-page .welcome {
+  width: 0%;
+  height: 0vh;
+  position: absolute;
+  background-color: var(--orange);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 100%;
+  animation: about-page-welcome 1.5s linear forwards;
+}
+
+@keyframes about-page-welcome {
+  0% {
+    width: 0%;
+    height: 0vh;
+    border-radius: 1000%;
+  }
+  15% {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+  85% {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+  100% {
+    width: 0%;
+    height: 0vh;
+    border-radius: 1000%;
+    display: none;
+  }
+}
+
+/* ABOUT PAGE */
+/* welcome Intro */
+.about-page .welcome h1 {
+  font-family: var(--secondary);
+  font-size: 0;
+  height: 10%;
+  margin: auto;
+  animation: about-page-welcome-h1 1.5s linear forwards;
+}
+
+@keyframes about-page-welcome-h1 {
+  0% {
+    font-size: 0;
+  }
+  15% {
+    font-size: 120px;
+  }
+  85% {
+    font-size: 120px;
+  }
+  100% {
+    font-size: 0;
+    display: none;
+  }
+}
+
+.about-page .invisible {
+  display: none;
+  /* transition: display 0.1s linear forward 1.3s; */
+  /* opacity: 0; */
+  /* animation: about-page-sections 1.5s linear forwards; */
+}
+
+.about-page .blurred {
+  filter: blur(10px);
+}
+
+.about-page .bellow {
+  transform: translateY(150%);
+}
+
+.about-page .seen {
+  animation: about-page-seen 0.5s linear forwards;
+}
+
+@keyframes about-page-seen {
+  from {
+    transform: translateY(150%);
+    filter: blur(10px);
+  }
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* --------------- */
+/* Intro Section */
+/* --------------- */
+
+.about-page .container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.about-page .wrapper {
+  width: 50em;
+  height: 30em;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.about-page .wrapper h3 {
+  margin-top: 10%;
+  font-family: var(--primary);
+}
+
+.about-page .intro .wrapper .profile-pic {
+  width: 30%;
+  height: 50%;
+  /* background-color: red; */
+  position: absolute;
+  margin: auto;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  transform: translateY(150%);
+}
+
+.about-page .intro .wrapper .profile-pic .this-is-me {
+  font-family: var(--secondary);
+  font-size: 60px;
+  /* background-color: green; */
+  width: 80%;
+  /* margin-left: 70%; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -55%;
+  overflow: hidden;
+}
+
+.about-page .intro .wrapper .profile-pic .radius-bg {
+  position: absolute;
+  background-color: var(--orange);
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.about-page .intro .wrapper .profile-pic .this-is-me .right {
+  /* background-color: yellow; */
+  margin-top: 35%;
+  transform: translateX(-160px);
+  transition: transform 0.5s ease-out;
+  rotate: -10deg;
+  width: 130%;
+}
+
+.about-page .intro .wrapper .profile-pic:hover .this-is-me .right {
+  transform: translateX(30px);
+}
+
+.about-page .intro .wrapper .profile-pic img {
+  width: 100%;
+  /* background-size: cover; */
+  position: absolute;
+  /* top: 0; */
+  transform: translateY(5px);
+}
+
+/* --------------- */
+/* Second-Section */
+/* --------------- */
+
+/* Vetical sliders */
+.about-page .second .models-slider {
+  font-family: system-ui, sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  width: 400px;
+  height: 260px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.about-page .second .models-slider .slider-wrapper {
+  width: 200px;
+  /* height: 550px; */
+  overflow: hidden;
+}
+
+.about-page .second .models-slider .slider-wrapper .slider {
+  animation: 35s slider linear infinite;
+}
+
+@keyframes slider {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.about-page .second .models-slider img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.about-page .second .models-slider .wrapperCenter {
+  width: 200px;
+  /* height: 550px; */
+  top: 0;
+  margin: 0 5px;
+  overflow: hidden;
+}
+
+/* @media only screen and (max-width: 770px) {
+  .about-page .second .models-slider .slider-wrapper {
+    width: 90px;
+    height: 400px;
+  }
+
+  .about-page .second .models-slider .wrapperCenter {
+    width: 90px;
+    height: 400px;
+  }
+
+  .about-page .second .models-slider img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .about-page .second .models-slider .slider-wrapper {
+    width: 60px;
+    height: 200px;
+  }
+
+  .about-page .second .models-slider .wrapperCenter {
+    width: 60px;
+    height: 200px;
+  }
+
+  .about-page .second .models-slider img {
+    width: 60px;
+    height: 60px;
+  }
+} */
+
+.about-page .second .models-slider .wrapperCenter .sliderdown {
+  animation: 35s sliderdown linear infinite;
+}
+
+@keyframes sliderdown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.about-page .second .models-slider .wrapperCenter:hover .sliderdown {
+  animation-play-state: paused;
+}
+
+.about-page .second .models-slider .slider-wrapper:hover .slider {
+  animation-play-state: paused;
+}
+
+/* --------------- */
+/* THIRD-SECTION */
+/* --------------- */
+
+.about-page .third .bz-work {
+  /* background-color: yellow; */
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 15em;
+}
+
+.about-page .third .bz-work img:nth-child(1) {
+  /* background-color: #939393; */
+  width: 100%;
+  /* position: absolute; */
+}
+
+.about-page .third .bz-work img:nth-child(2) {
+  width: 0;
+  position: absolute;
+  /* bottom: 70%; */
+  bottom: 50%;
+  right: 40%;
+  transition: all 0.2s linear;
+}
+
+.about-page .third .bz-work:hover img:nth-child(2) {
+  width: 70%;
+  bottom: 70%;
+  right: -37%;
+}
+
+/* --------------- */
+/* FOURTH-SECTION */
+/* --------------- */
+
+.about-page .fourth .stakeholders {
+  /* background-color: yellow; */
+  width: 18em;
+  height: 11em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.about-page .fourth .stakeholders img:nth-child(1) {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+}
+
+.about-page .fourth .stakeholders img:nth-child(1).going-right {
+  animation: first-stakeholders-split-pictures 0.5s linear forwards 1.5s;
+}
+
+.about-page .fourth .stakeholders img:nth-child(2) {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  /* animation: second-stakeholders-split-pictures 0.5s linear forwards 1.5s; */
+}
+
+.about-page .fourth .stakeholders img:nth-child(2).going-left {
+  animation: second-stakeholders-split-pictures 0.5s linear forwards 1.5s;
+}
+
+@keyframes first-stakeholders-split-pictures {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(55%);
+  }
+}
+
+@keyframes second-stakeholders-split-pictures {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-55%);
+  }
+}
+
+/* --------------- */
+/* FIFTH-SECTION */
+/* --------------- */
+
+.about-page .fifth .hire-me-button {
+  /* background-color: red; */
+  width: 8em;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.about-page .fifth .hire-me-button img {
+  width: 100%;
+  filter: drop-shadow(0px 0px 1px white);
+  /* transform: translate3d(0, 0, 0); */
+  transition: all 0.5s ease-in;
+}
+
+.about-page .fifth .hire-me-button:hover img {
+  filter: drop-shadow(10px 3px 4px black);
+  transform: translate3d(-10px, -3px, 0);
+}
+
+.about-page .fifth .hire-me-button:active img {
+  filter: drop-shadow(0px 0px 1px white);
+  transform: translate3d(0, 0, 0);
+}
+
+.about-page footer {
+  position: absolute;
+  /* background-color: #32ab3e; */
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-page footer div {
+  margin: auto;
+  font-family: var(--primary);
+  color: var(--grey);
+}
+
+.about-page footer div span img {
+  width: 18px;
+  transform: translateY(3px);
+}
+
+/* --------------------------------------------------------- */
+/* ----- Responsive @Media Screen Resolution -------------- */
+/* -------------------------------------------------------- */
+
+@media only screen and (max-width: 1020px) {
+  @keyframes about-page-welcome-h1 {
+    0% {
+      font-size: 0;
+    }
+    15% {
+      font-size: 80px;
+    }
+    85% {
+      font-size: 80px;
+    }
+    100% {
+      font-size: 0;
+      display: none;
+    }
+  }
+
+  .about-page .wrapper {
+    width: 35em;
+    height: 30em;
+    /* background-color: red; */
+  }
+
+  .about-page .wrapper h3 {
+    text-align: center;
+  }
+
+  .about-page .intro .wrapper .profile-pic {
+    width: 30%;
+    height: 35.3%;
+  }
+
+  .about-page .intro .wrapper .profile-pic .this-is-me {
+    font-size: 42px;
+  }
+
+  .about-page .intro .wrapper .profile-pic:hover .this-is-me .right {
+    transform: translateX(20px);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /* welcome Intro */
+
+  @keyframes about-page-welcome-h1 {
+    0% {
+      font-size: 0;
+    }
+    15% {
+      font-size: 60px;
+    }
+    85% {
+      font-size: 60px;
+    }
+    100% {
+      font-size: 0;
+      display: none;
+    }
+  }
+
+  .about-page .wrapper {
+    width: 25em;
+    height: 30em;
+  }
+
+  .about-page .intro .wrapper .profile-pic {
+    width: 40%;
+    height: 33.6%;
+  }
+
+  /* Vetical sliders */
+  .about-page .second .models-slider {
+    width: 400px;
+    height: 220px;
+  }
+
+  .about-page .second .models-slider .slider-wrapper {
+    width: 80px;
+    height: 200px;
+  }
+
+  .about-page .second .models-slider .wrapperCenter {
+    width: 80px;
+    height: 200px;
+  }
+
+  .about-page .second .models-slider img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-page .third .bz-work {
+    width: 12em;
+  }
+
+  .about-page .fourth .stakeholders {
+    width: 11em;
+    height: 7em;
+  }
+
+  .about-page .fifth .hire-me-button {
+    width: 6em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .about-page .wrapper {
+    width: 20em;
+  }
+
+  .about-page .wrapper h3 {
+    font-size: 16px;
+  }
+
+  .about-page .intro .wrapper .profile-pic {
+    width: 40%;
+    height: 27.2%;
+  }
+
+  .about-page .intro .wrapper .profile-pic .this-is-me {
+    font-size: 32px;
+  }
+
+  .about-page .second .models-slider {
+    width: 100%;
+    height: 200px;
+  }
+
+  .about-page .second .models-slider .slider-wrapper {
+    width: 80px;
+    height: 200px;
+  }
+
+  .about-page .second .models-slider .wrapperCenter {
+    width: 80px;
+    height: 200px;
+  }
+
+  .about-page .fourth .stakeholders {
+    width: 10em;
+    height: 6em;
+  }
+
+  .about-page .fifth .hire-me-button {
+    width: 5em;
+  }
+
+  /* Welcme Intro */
+
+  @keyframes about-page-welcome-h1 {
+    0% {
+      font-size: 0;
+    }
+    15% {
+      font-size: 40px;
+    }
+    85% {
+      font-size: 40px;
+    }
+    100% {
+      font-size: 0;
+      display: none;
+    }
+  }
+
+  /* FOOTER */
+  /* about page */
+  .about-page footer div {
+    font-size: 12px;
+  }
+
+  .about-page footer div span img {
+    width: 12px;
+  }
+}

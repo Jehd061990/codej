@@ -1,0 +1,589 @@
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* ------------------------- HERO PAGE ---------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
+#hero-section {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  /* background-color: #ffe39e; */
+}
+
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* ------------------------- BANNERS ----------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+#hero-section .banners {
+  font-family: var(--primary);
+  color: var(--white);
+  width: 450px;
+  height: 400px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: color 1s linear;
+  /* background-color: red; */
+}
+
+#hero-section .banners h1 span {
+  font-size: 64px;
+  /* color: var(--orange); */
+  font-family: var(--secondary);
+  font-weight: 400;
+  transition: color 1s linear;
+  color: white;
+}
+
+#hero-section .banners .main-banner,
+.css-banner,
+.html-banner,
+.react-banner,
+.js-banner {
+  display: block;
+  position: absolute;
+}
+
+#hero-section .banners .main-banner span {
+  color: var(--orange);
+}
+
+#hero-section .banners .fade-out {
+  animation: fade-out 1s linear forwards;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#hero-section .banners .fade-in {
+  animation: fade-in 1s linear forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* ------------------------- IDEAS ----------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+#hero-section .ideas {
+  width: 500px;
+  height: 500px;
+  /* width: 40%;
+  height: 40%; */
+  /* background-color: burlywood; */
+  position: absolute;
+  margin: auto;
+  right: 0;
+  /* top: 0; */
+  bottom: 0;
+  filter: blur(10px);
+  animation: hero-section-ideas 0.5s linear forwards;
+}
+
+@keyframes hero-section-ideas {
+  from {
+    filter: blur(10px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
+@keyframes hero-section-ideas {
+  from {
+    filter: blur(10px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
+#hero-section .ideas .rotate {
+  /* background-color: aqua; */
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  /* bottom: 0; */
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: 5s rotate linear infinite;
+  z-index: 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#hero-section .ideas .rotate .items img {
+  width: 100%;
+}
+
+#hero-section .ideas .rotate .items .css {
+  animation: 5s item-css cubic-bezier(0.27, 0.27, 0.83, 0.83) infinite;
+  /* background-color: red; */
+}
+
+#hero-section .ideas .rotate .items .bg {
+  transform: rotateZ(45deg);
+  position: absolute;
+  z-index: -1;
+  border-radius: 30%;
+}
+
+#hero-section .ideas .rotate .items .css-bg {
+  background-color: var(--orange);
+  width: 145%;
+  height: 130%;
+  right: -25%;
+  top: -25%;
+}
+
+#hero-section .ideas .rotate .items .js-bg {
+  background-color: #b33cfd;
+  width: 145%;
+  height: 130%;
+  right: -25%;
+  top: -25%;
+}
+
+#hero-section .ideas .rotate .items .html-bg {
+  background-color: #000000;
+  width: 140%;
+  height: 135%;
+  right: -20%;
+  top: -28%;
+}
+
+#hero-section .ideas .rotate .items .react-bg {
+  /* background-color: var(--lightgrey); */
+  background-color: #32ab3e;
+  width: 135%;
+  height: 130%;
+  right: -16%;
+  top: -20%;
+}
+
+@keyframes item-css {
+  0% {
+    transform: translateX(0);
+    width: 160%;
+  }
+  25% {
+    transform: translateX(-50px);
+    width: 200%;
+  }
+  50% {
+    transform: translateX(0px);
+    width: 100%;
+  }
+  75% {
+    transform: translateX(50px);
+    width: 100%;
+  }
+  100% {
+    transform: translateX(0px);
+    width: 160%;
+  }
+}
+
+#hero-section .ideas .rotate .items .js {
+  animation: 5s item-js cubic-bezier(0.27, 0.27, 0.83, 0.83) infinite;
+}
+
+@keyframes item-js {
+  0% {
+    transform: translateX(-50px);
+    width: 200%;
+  }
+  25% {
+    transform: translateX(0px);
+    width: 100%;
+  }
+  50% {
+    transform: translateX(50px);
+    width: 110%;
+  }
+  75% {
+    transform: translateX(0px);
+    width: 160%;
+  }
+  100% {
+    transform: translateX(-50px);
+    width: 200%;
+  }
+}
+
+#hero-section .ideas .rotate .items .html {
+  animation: 5s item-html cubic-bezier(0.27, 0.27, 0.83, 0.83) infinite;
+}
+
+@keyframes item-html {
+  0% {
+    transform: translateX(0px);
+    width: 100%;
+  }
+  25% {
+    transform: translateX(50px);
+    width: 100%;
+  }
+  50% {
+    transform: translateX(50px);
+    width: 200%;
+  }
+  75% {
+    transform: translateX(-50px);
+    width: 200%;
+  }
+  100% {
+    transform: translateX(0px);
+    width: 100%;
+  }
+}
+
+#hero-section .ideas .rotate .items .react {
+  animation: 5s item-react cubic-bezier(0.27, 0.27, 0.83, 0.83) infinite;
+}
+
+@keyframes item-react {
+  0% {
+    transform: translateX(50px);
+    width: 100%;
+  }
+  25% {
+    transform: translateX(50px);
+    width: 160%;
+  }
+  50% {
+    transform: translateX(-50px);
+    width: 200%;
+  }
+  75% {
+    transform: translateX(0px);
+    width: 100%;
+  }
+  100% {
+    transform: translateX(50px);
+    width: 100%;
+  }
+}
+
+#hero-section .ideas .rotate .items:nth-child(1) {
+  /* background-color: palevioletred; */
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: 5s items-first linear infinite;
+}
+
+@keyframes items-first {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+#hero-section .ideas .rotate .items:nth-child(2) {
+  /* background-color: palevioletred; */
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: 5s items-second linear infinite;
+}
+
+@keyframes items-second {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+#hero-section .ideas .rotate .items:nth-child(3) {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: 5s items-third linear infinite;
+}
+
+@keyframes items-third {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+#hero-section .ideas .rotate .items:nth-child(4) {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: 5s items-fourth linear infinite;
+}
+
+@keyframes items-fourth {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+#hero-section .item-blur {
+  filter: opacity(0);
+  transition: filter 0.5s ease;
+}
+
+#hero-section .item-none-blur {
+  filter: opacity(1);
+  transition: filter 0.5s ease;
+}
+
+#hero-section .bg-effect {
+  animation: 2s bg-effect linear infinite;
+}
+
+@keyframes bg-effect {
+  from {
+    transform: rotateZ(45deg);
+  }
+  to {
+    transform: rotateZ(405deg);
+  }
+}
+
+#hero-section .ideas .rotate:hover .items .css {
+  animation-play-state: paused;
+}
+
+#hero-section .ideas .rotate:hover .items .js {
+  animation-play-state: paused;
+}
+
+#hero-section .ideas .rotate:hover .items .html {
+  animation-play-state: paused;
+}
+
+#hero-section .ideas .rotate:hover .items .react {
+  animation-play-state: paused;
+}
+
+#hero-section .ideas .rotate:hover .items {
+  animation-play-state: paused;
+}
+
+#hero-section .ideas .rotate:hover {
+  animation-play-state: paused;
+}
+
+#hero-section .ideas img.mypic {
+  width: 70%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.code-bg-container {
+  width: 70%;
+  height: 70%;
+  overflow: hidden;
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+  left: 8%;
+  right: 0;
+  top: -35px;
+}
+
+.code-bg-container::after {
+  content: "";
+  background-color: var(--grey);
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  filter: blur(20px);
+  transform: translateY(-60%);
+  transition: background-color 1s linear;
+}
+
+.code-bg-container img:nth-child(1) {
+  width: 100%;
+  transform: translateY(45%);
+}
+
+.code-bg-container img:nth-child(1).first-move-up {
+  animation: 6s code-bg-container-first-move-up linear infinite;
+  position: absolute;
+}
+
+@keyframes code-bg-container-first-move-up {
+  from {
+    transform: translateY(45%);
+  }
+  to {
+    transform: translateY(-150%);
+  }
+}
+
+.code-bg-container img:nth-child(2) {
+  /* background-color: #939393; */
+  width: 100%;
+  transform: translateY(45%);
+  position: absolute;
+}
+
+.code-bg-container img:nth-child(2).second-move-up {
+  animation: 6s code-bg-container-second-move-up linear infinite;
+  animation-delay: 3s;
+}
+
+@keyframes code-bg-container-second-move-up {
+  from {
+    transform: translateY(45%);
+  }
+  to {
+    transform: translateY(-150%);
+  }
+}
+/* --------------------------------------------------------- */
+/* ----- Responsive @Media Screen Resolution -------------- */
+/* -------------------------------------------------------- */
+
+@media only screen and (max-width: 1092px) {
+  #hero-section .banners {
+    width: 400px;
+    height: 500px;
+  }
+
+  #hero-section .ideas {
+    width: 430px;
+    height: 430px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  #hero-section .banners {
+    width: 285px;
+    height: 400px;
+  }
+
+  #hero-section .banners h1 {
+    font-size: 24px;
+  }
+
+  #hero-section .banners h1 span {
+    font-size: 40px;
+  }
+
+  #hero-section .ideas {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #hero-section .banners {
+    width: 285px;
+    height: 400px;
+    transform: translateY(-50px);
+  }
+
+  #hero-section .ideas {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #hero-section .banners {
+    right: 0;
+    width: 285px;
+    height: 300px;
+    transform: translateY(-80px);
+  }
+
+  #hero-section .banners h1 {
+    font-size: 18px;
+  }
+
+  #hero-section .banners h1 span {
+    font-size: 30px;
+  }
+
+  #hero-section .ideas {
+    width: 250px;
+    height: 250px;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #hero-section .banners {
+    width: 235px;
+  }
+
+  #hero-section .banners h1 {
+    font-size: 16px;
+  }
+
+  #hero-section .banners h1 span {
+    font-size: 28px;
+  }
+
+  #hero-section .ideas {
+    transform: translateX(-30px);
+  }
+}

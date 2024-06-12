@@ -1,0 +1,587 @@
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* ------------------------- CONTACT PAGE ---------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
+.contact-page {
+  width: 100%;
+  height: 100vh;
+  font-family: var(--primary);
+  color: var(--white);
+}
+
+.contact-page .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.contact-page .title h1 {
+  margin: 0;
+  font-size: 500%;
+  color: var(--orange);
+  font-weight: 400;
+  font-family: var(--secondary);
+}
+
+.contact-page .container {
+  width: 70em;
+  height: 30em;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.contact-page .container .mid {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.contact-page .container .contact-icons {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.contact-page .container .contact-icons::after {
+  content: "";
+  width: 40%;
+  height: 80%;
+  background-color: var(--orange);
+  position: absolute;
+  z-index: -1;
+  transform: translate(10px, 10px);
+  border-radius: 10px;
+  filter: blur(100px);
+}
+
+.contact-page .container .contact-icons img {
+  width: 35px;
+}
+
+.contact-page .container .contact-icons .settings {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-page .container .contact-icons .cp img {
+  width: 30px;
+}
+
+.contact-page .container .contact-icons .cp span {
+  margin: auto;
+  margin-left: 10px;
+}
+
+.contact-page .container .contact-icons .phone span {
+  margin: auto;
+  margin-left: 10px;
+}
+
+.contact-page .container .contact-icons .mail span {
+  margin: auto;
+  margin-left: 10px;
+}
+
+.contact-page .container .contact-icons .links {
+  margin-top: 50px;
+  display: flex;
+  justify-content: start;
+  gap: 35px;
+}
+
+.contact-page .container .email {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 50%;
+}
+
+.contact-page .container .email-sent {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  width: 50%;
+  /* background-color: blueviolet; */
+}
+
+.contact-page .container .email-sent .mail-status {
+  width: 50%;
+  /* height: 50%; */
+  animation: mail-status 0.5s linear 1.4s forwards;
+  opacity: 0;
+  /* background-color: blue; */
+  padding: 10% 0;
+  text-align: center;
+}
+
+@keyframes mail-status {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact-page .container .email-sent .mail-status .resend {
+  width: 100px;
+  margin: auto;
+  position: relative;
+  transform: translateY(10px);
+  cursor: pointer;
+}
+
+.contact-page .container .email-sent .mail-status .resend img {
+  width: 100px;
+  height: 20px;
+  transform: translateY(2px) translateX(-50px);
+  position: absolute;
+  left: 0;
+}
+
+.contact-page .container .email-sent .mail-status .resend:hover img {
+  animation: resend-img-hover 0.5s linear infinite;
+}
+
+@keyframes resend-img-hover {
+  0% {
+    transform: translateY(2px) translateX(-50px);
+  }
+  50% {
+    transform: translateY(2px) translateX(-55px);
+  }
+  100% {
+    transform: translateY(2px) translateX(-50px);
+  }
+}
+
+.contact-page .container .email-sent .mail-status h5 {
+  font-family: var(--secondary);
+  font-size: 300%;
+  font-style: normal;
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.contact-page .container .email-sent .sent-container {
+  width: 180px;
+  position: relative;
+  transform: translateX(-100%);
+  animation: sent-container 0.2s linear 1.4s forwards;
+}
+
+@keyframes sent-container {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.contact-page .container .email-sent .sent-container .mail-box {
+  width: 100%;
+}
+
+.contact-page .container .email-sent .sent-container .envelope-container {
+  /* background-color: green; */
+  width: 125%;
+  position: absolute;
+  top: 13%;
+  transform: translateX(-70%) rotateZ(2deg);
+  overflow: hidden;
+  /* background-color: green; */
+  /* border-top-right-radius: 3%; */
+}
+
+.contact-page
+  .container
+  .email-sent
+  .sent-container
+  .envelope-container
+  .envelope {
+  /* background-color: green; */
+  width: 50%;
+  animation: envelope-sent 0.2s linear 1s forwards;
+}
+
+@keyframes envelope-sent {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(160%);
+  }
+}
+
+.contact-page .container .email .address input {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-family: var(--primary);
+  font-size: 18px;
+}
+
+.contact-page .container .email label,
+input {
+  display: block;
+  gap: 5px;
+}
+
+.contact-page .container .email .message textarea {
+  width: 100%;
+  height: 10em;
+  resize: none;
+  font-family: var(--primary);
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+
+.contact-page .container .email .message div {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.contact-page .container .email .message button {
+  padding: 14px;
+  background-color: var(--white);
+  color: var(--grey);
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 300px;
+  font-family: var(--primary);
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+
+.contact-page .container .email .message button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.contact-page footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-page footer div {
+  margin: auto;
+  font-family: var(--primary);
+  color: var(--white);
+}
+
+.contact-page footer div span img {
+  width: 18px;
+  transform: translateY(3px);
+}
+
+/* --------------------------------------------------------- */
+/* ----- Responsive @Media Screen Resolution -------------- */
+/* -------------------------------------------------------- */
+
+@media only screen and (max-width: 1140px) {
+  .contact-page {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--primary);
+    color: var(--white);
+  }
+
+  .contact-page .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+
+  .contact-page .title h1 {
+    margin: 0;
+    font-size: 500%;
+    color: var(--orange);
+    font-weight: var(--secondary);
+    font-family: var(--secondary);
+  }
+
+  .contact-page .container {
+    width: 100%;
+    height: 30em;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* background-color: #4333fd; */
+  }
+
+  .contact-page .container .mid {
+    width: 90%;
+    margin: auto;
+    /* background-color: #32ab3e; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-page .container .contact-icons {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    /* background-color: #e0115f; */
+  }
+
+  .contact-page .container .contact-icons::after {
+    content: "";
+    width: 40%;
+    height: 80%;
+    background-color: var(--orange);
+    position: absolute;
+    z-index: -1;
+    transform: translate(10px, 10px);
+    border-radius: 10px;
+    filter: blur(100px);
+  }
+
+  .contact-page .container .email {
+    width: 50%;
+  }
+
+  .contact-page .container .contact-icons img {
+    width: 35px;
+  }
+
+  .contact-page .container .contact-icons .settings {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-page .container .contact-icons .cp img {
+    width: 30px;
+  }
+
+  .contact-page .container .contact-icons .cp span {
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  .contact-page .container .contact-icons .phone span {
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  .contact-page .container .contact-icons .mail span {
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  .contact-page .container .contact-icons .links {
+    margin-top: 0px;
+    display: flex;
+    justify-content: start;
+    gap: 35px;
+  }
+
+  .contact-page .container .email-sent .mail-status h5 {
+    font-size: 250%;
+  }
+
+  .contact-page .container .email-sent .sent-container {
+    width: 130px;
+  }
+
+  .contact-page .container .email {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-page .container .email .address input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--primary);
+    font-size: 18px;
+  }
+
+  .contact-page .container .email label,
+  input {
+    display: block;
+    gap: 5px;
+  }
+
+  .contact-page .container .email .message textarea {
+    width: 100%;
+    height: 10em;
+    resize: none;
+    font-family: var(--primary);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+  }
+
+  .contact-page .container .email .message div {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+  }
+
+  .contact-page .container .email .message button {
+    padding: 14px;
+    background-color: var(--white);
+    color: var(--grey);
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 300px;
+    font-family: var(--primary);
+    transition: all 0.5s linear;
+    cursor: pointer;
+  }
+
+  .contact-page .container .email .message button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+  .contact-page footer {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-page footer div {
+    margin: auto;
+    font-family: var(--primary);
+    color: var(--white);
+  }
+
+  .contact-page footer div span img {
+    width: 18px;
+    transform: translateY(3px);
+  }
+}
+
+@media only screen and (max-width: 808px) {
+  .contact-page .container .email-sent .mail-status h5 {
+    font-size: 190%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* CONTACT PAGE */
+
+  .contact-page .title h1 {
+    font-size: 300%;
+    color: var(--orange);
+  }
+
+  .contact-page .container .mid {
+    flex-direction: column-reverse;
+  }
+
+  .contact-page .container .contact-icons {
+    width: 100%;
+    height: 200px;
+    gap: 10px;
+  }
+
+  .contact-page .container .email {
+    width: 100%;
+  }
+
+  .contact-page .container .email-sent {
+    width: 100%;
+  }
+
+  .contact-page .container .email-sent .sent-container {
+    width: 100px;
+  }
+
+  .contact-page .container .contact-icons img {
+    width: 25px;
+  }
+
+  .contact-page .container .contact-icons .cp img {
+    width: 20px;
+  }
+
+  .contact-page .container .contact-icons .links {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    transform: translateY(-35px);
+  }
+
+  .contact-page .container .email .address input {
+    height: 30px;
+  }
+
+  .contact-page .container .email label,
+  input {
+    gap: 5px;
+  }
+
+  .contact-page .container .email .message textarea {
+    height: 5em;
+  }
+
+  .contact-page .container .email .message div {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+  }
+
+  .contact-page .container .email .message button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  /* contact page footer */
+
+  .contact-page footer div {
+    font-size: 12px;
+  }
+
+  .contact-page footer div span img {
+    width: 12px;
+  }
+}
