@@ -273,10 +273,10 @@ const About = () => {
         </div>
         <footer>
           <div>
-            Copyright
+            Copyright{" "}
             <span>
               <img src="assets/copyright.svg" alt="copyright logo" />
-            </span>
+            </span>{" "}
             Jcode. All Rights Reserved 2024
           </div>
         </footer>
