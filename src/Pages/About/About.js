@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import "./about.css";
 import ThemContext from "../../Components/Theme/Theme";
 
@@ -39,7 +39,7 @@ const About = () => {
       observeSection.observe(section);
     });
 
-    // Observer for stakeholders pictures
+    // Observer for stakeholders s
     const fStkholders = document.querySelectorAll(
       ".about-page .fourth .stakeholders img:nth-child(1)"
     );
@@ -89,7 +89,7 @@ const About = () => {
       fStkholders.forEach((fstkholder) => fStake.unobserve(fstkholder));
       sStkholders.forEach((fstkholder) => sStake.unobserve(fstkholder));
     };
-  }, [setAboutNav]);
+  }, [setAboutNav, setWorkNav]);
 
   return (
     <div className="about-page">
@@ -107,7 +107,7 @@ const About = () => {
             <div className="this-is-me">
               <div className="right">this is me</div>
             </div>
-            <img src="assets/myimage.png" alt="my profile picture" />
+            <img src="assets/myimage.png" alt="my profile " />
           </div>
         </div>
       </div>
@@ -124,28 +124,28 @@ const About = () => {
           <div className="models-slider bellow blurred seen">
             <div className="slider-wrapper">
               <div className="slider">
-                <img src="assets/nft1.png" alt="picture of lumpia" />
+                <img src="assets/nft1.png" alt="lumpia" />
                 <img
                   src="https://i.pinimg.com/736x/b2/77/4a/b2774ade393c2612fbe949c7a7098930.jpg"
-                  alt="picture of brownies"
+                  alt="brownies"
                 />
-                <img src="assets/nft3.png" alt="picture of cake" />
+                <img src="assets/nft3.png" alt="cake" />
                 <img
                   src="https://p.turbosquid.com/ts-thumb/Co/se3r9W/LB/rigging/png/1654137497/1920x1080/fit_q87/5b94251711114e825521ba765e35d447d867886e/rigging.jpg"
-                  alt="picture of cookies"
+                  alt="cookies"
                 />
               </div>
               <div className="slider">
                 <img
                   src="https://i.pinimg.com/736x/b2/77/4a/b2774ade393c2612fbe949c7a7098930.jpg"
-                  alt="picture of macaroni"
+                  alt="macaroni"
                 />
-                <img src="assets/nft6.png" alt="picture of tapioca" />
+                <img src="assets/nft6.png" alt="tapioca" />
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQodg2Yyfjxk5RBZjsx6Ra6edIeJNwp8U69Ld2f_S3oR3VmdOaiIhixvRsEHdQzAbHpVHU&usqp=CAU"
-                  alt="picture maja"
+                  alt=" maja"
                 />
-                <img src="assets/nft2.png" alt="piture of spaghetti" />
+                <img src="assets/nft2.png" alt="spaghetti" />
               </div>
             </div>
 
@@ -153,31 +153,31 @@ const About = () => {
               <div className="sliderdown">
                 <img
                   src="https://media.sketchfab.com/models/822e4dfaa1654d7ea12b697dd345c278/thumbnails/e507bd6358f94769bc8fd40b81785ea4/0add7bfed17d4472a4f151b3cd3fb072.jpeg"
-                  alt="picture of lumpia"
+                  alt="lumpia"
                 />
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQodg2Yyfjxk5RBZjsx6Ra6edIeJNwp8U69Ld2f_S3oR3VmdOaiIhixvRsEHdQzAbHpVHU&usqp=CAU"
-                  alt="picture of brownies"
+                  alt="brownies"
                 />
-                <img src="assets/nft3.png" alt="picture of cake" />
+                <img src="assets/nft3.png" alt="cake" />
                 <img
                   src="https://i.pinimg.com/736x/b2/77/4a/b2774ade393c2612fbe949c7a7098930.jpg"
-                  alt="picture of cookies"
+                  alt="cookies"
                 />
               </div>
               <div className="sliderdown">
-                <img src="assets/nft5.png" alt="picture of macaroni" />
+                <img src="assets/nft5.png" alt="macaroni" />
                 <img
                   src="https://i.pinimg.com/736x/b2/77/4a/b2774ade393c2612fbe949c7a7098930.jpg"
-                  alt="picture of tapioca"
+                  alt="tapioca"
                 />
                 <img
                   src="https://p.turbosquid.com/ts-thumb/Co/se3r9W/LB/rigging/png/1654137497/1920x1080/fit_q87/5b94251711114e825521ba765e35d447d867886e/rigging.jpg"
-                  alt="picture maja"
+                  alt="maja"
                 />
                 <img
                   src="https://clara.io/resources/images/400x0/ae729fcca2f2912eb01f59c5ae9dcefc"
-                  alt="piture of spaghetti"
+                  alt="spaghetti"
                 />
               </div>
             </div>
@@ -186,28 +186,28 @@ const About = () => {
               <div className="slider">
                 <img
                   src="https://p.turbosquid.com/ts-thumb/Co/se3r9W/LB/rigging/png/1654137497/1920x1080/fit_q87/5b94251711114e825521ba765e35d447d867886e/rigging.jpg"
-                  alt="picture of lumpia"
+                  alt="lumpia"
                 />
-                <img src="assets/nft2.png" alt="picture of brownies" />
+                <img src="assets/nft2.png" alt="brownies" />
                 <img
                   src="https://i.pinimg.com/736x/b2/77/4a/b2774ade393c2612fbe949c7a7098930.jpg"
-                  alt="picture of cake"
+                  alt="cake"
                 />
-                <img src="assets/nft4.png" alt="picture of cookies" />
+                <img src="assets/nft4.png" alt="cookies" />
               </div>
               <div className="slider">
                 <img
                   src="https://p.turbosquid.com/ts-thumb/Co/se3r9W/LB/rigging/png/1654137497/1920x1080/fit_q87/5b94251711114e825521ba765e35d447d867886e/rigging.jpg"
-                  alt="picture of macaroni"
+                  alt="macaroni"
                 />
                 <img
                   src="https://i.pinimg.com/736x/b2/77/4a/b2774ade393c2612fbe949c7a7098930.jpg"
-                  alt="picture of tapioca"
+                  alt="tapioca"
                 />
-                <img src="assets/nft1.png" alt="picture maja" />
+                <img src="assets/nft1.png" alt=" maja" />
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQodg2Yyfjxk5RBZjsx6Ra6edIeJNwp8U69Ld2f_S3oR3VmdOaiIhixvRsEHdQzAbHpVHU&usqp=CAU"
-                  alt="piture of spaghetti"
+                  alt="spaghetti"
                 />
               </div>
             </div>
@@ -226,7 +226,7 @@ const About = () => {
           <div className="bz-work bellow blurred seen">
             <img
               src="assets/working-on-pc.png"
-              alt="working on desktop computer image"
+              alt="working on desktop computer"
             />
 
             <img
@@ -251,9 +251,9 @@ const About = () => {
             <img
               src="assets/stakeholdersample 2.png"
               className="first-pic"
-              alt=""
+              alt="stakeholders"
             />
-            <img src="assets/stakeholdersample 3.png" alt="" />
+            <img src="assets/stakeholdersample 3.png" alt="stakeholders" />
           </div>
         </div>
       </div>

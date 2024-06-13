@@ -47,7 +47,7 @@ const Work = () => {
         workIndex.classList.add("forward");
       }
     });
-  }, [setAboutNav]);
+  }, [setWorkNav, setAboutNav]);
 
   return (
     <>
@@ -63,7 +63,7 @@ const Work = () => {
             <div className="work">
               <img
                 src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="picture of first project"
+                alt="first project"
               />
               <div className="details">
                 <h5>
@@ -80,7 +80,7 @@ const Work = () => {
             <div className="work">
               <img
                 src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="picture of first project"
+                alt="first project"
               />
               <div className="details">
                 <h5>
@@ -97,7 +97,7 @@ const Work = () => {
             <div className="work">
               <img
                 src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="picture of first project"
+                alt="first project"
               />
               <div className="details">
                 <h5>
@@ -114,7 +114,7 @@ const Work = () => {
             <div className="work">
               <img
                 src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="picture of first project"
+                alt="first project"
               />
               <div className="details">
                 <h5>
@@ -131,7 +131,7 @@ const Work = () => {
             <div className="work">
               <img
                 src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="picture of first project"
+                alt="first project"
               />
               <div className="details">
                 <h5>
@@ -148,7 +148,7 @@ const Work = () => {
             <div className="work">
               <img
                 src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="picture of first project"
+                alt="first project"
               />
               <div className="details">
                 <h5>
@@ -165,7 +165,7 @@ const Work = () => {
             <div className="work">
               <img
                 src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="picture of first project"
+                alt="first project"
               />
               <div className="details">
                 <h5>
@@ -182,7 +182,7 @@ const Work = () => {
             <div className="work">
               <img
                 src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="picture of first project"
+                alt="first project"
               />
               <div className="details">
                 <h5>

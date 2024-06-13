@@ -56,7 +56,7 @@ const Navbar = () => {
     return () => {
       window.onscroll = null;
     };
-  }, []);
+  }, [enableScroll]);
 
   const navBtn = () => {
     if (
