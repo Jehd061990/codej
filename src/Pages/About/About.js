@@ -1,4 +1,5 @@
 import React, { useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
 import "./about.css";
 import ThemContext from "../../Components/Theme/Theme";
 
@@ -267,9 +268,12 @@ const About = () => {
             the boundaries of web development together.
           </h3>
 
-          <a href="contact.html" className="hire-me-button bellow blurred seen">
+          <Link to="/contact" className="hire-me-button bellow blurred seen">
             <img src="assets/hireme.png" alt="hire-me button" />
-          </a>
+          </Link>
+          {/* <a href="contact.html" className="hire-me-button bellow blurred seen">
+            <img src="assets/hireme.png" alt="hire-me button" />
+          </a> */}
         </div>
         <footer>
           <div>

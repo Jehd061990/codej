@@ -150,7 +150,9 @@ const Navbar = () => {
       <nav ref={navRef} className="section invisible">
         <div id="nav-bg" ref={navBgRef}></div>
         <div className="brand" ref={navBrandRef}>
-          <img src="assets/code-j.png" alt="code-j logo" />
+          <Link to="/">
+            <img src="assets/code-j.png" alt="code-j logo" />
+          </Link>
         </div>
         <ul className="desktop-nav" ref={navUlRef}>
           <li>
