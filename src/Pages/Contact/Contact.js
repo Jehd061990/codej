@@ -4,7 +4,7 @@ import "./contact.css";
 import ThemeContext from "../../Components/Theme/Theme";
 
 const Contact = () => {
-  const [isMessageSent, setIsMessageSent] = useState(true);
+  const [isMessageSent, setIsMessageSent] = useState(false);
 
   const { setAboutNav, setWorkNav } = useContext(ThemeContext);
   useEffect(() => {
