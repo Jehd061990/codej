@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import "./work.css";
 import ThemeContext from "../../Components/Theme/Theme";
 
@@ -61,19 +62,20 @@ const Work = () => {
         <div className="works invisible">
           <div className="wrapper">
             <div className="work">
-              <img
-                src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="first project"
-              />
+              <a href="https://uno-chat-app.onrender.com/" target="_blank">
+                <img src="assets/uno-chat.png" alt="first project" />
+              </a>
+
               <div className="details">
                 <h5>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  optio eaque repellat esse saepe! Molestiae officia pariatur
-                  dicta iste laborum qui a architecto quae, animi facere nulla,
-                  in cumque reprehenderit?
+                  Welcome to my personal project: an elegant and simple chat app
+                  inspired by popular social media platforms. I hope you enjoy
+                  it!
                 </h5>
                 <button>
-                  <a href="#">See Live</a>
+                  <a href="https://uno-chat-app.onrender.com/" target="_blank">
+                    See Live
+                  </a>
                 </button>
               </div>
             </div>
@@ -202,7 +204,7 @@ const Work = () => {
                 <span>
                   <img src="assets/copyright-white.svg" alt="copyright logo" />
                 </span>{" "}
-                Jcode. All Rights Recerved 2024
+                Jcode. All Rights Reserved 2024
               </div>
             </footer>
           </div>

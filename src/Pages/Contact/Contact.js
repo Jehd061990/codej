@@ -4,7 +4,7 @@ import "./contact.css";
 import ThemeContext from "../../Components/Theme/Theme";
 
 const Contact = () => {
-  const [isMessageSent, setIsMessageSent] = useState(false);
+  const [isMessageSent, setIsMessageSent] = useState(true);
 
   const { setAboutNav, setWorkNav } = useContext(ThemeContext);
   useEffect(() => {
@@ -130,7 +130,7 @@ const Contact = () => {
             <span>
               <img src="assets/copyright-white.svg" alt="copyright logo" />
             </span>{" "}
-            Jcode. All Rights Recerved 2024
+            Jcode. All Rights Reserved 2024
           </div>
         </footer>
       </div>

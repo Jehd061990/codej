@@ -126,6 +126,17 @@
   gap: 25px;
   width: 50%;
   /* background-color: blueviolet; */
+  animation: container-email-sent 0.5s linear forwards;
+  filter: blur(20px);
+}
+
+@keyframes container-email-sent {
+  from {
+    filter: blur(20px);
+  }
+  to {
+    filter: blur(0);
+  }
 }
 
 .contact-page .container .email-sent .mail-status {
