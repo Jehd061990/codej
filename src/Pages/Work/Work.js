@@ -80,124 +80,64 @@ const Work = () => {
               </div>
             </div>
             <div className="work">
-              <img
-                src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="first project"
-              />
+              <a href="https://dp-blmo.onrender.com/" target="_blank">
+                <img src="assets/dp-pic.png" alt="first project" />
+              </a>
               <div className="details">
                 <h5>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  optio eaque repellat esse saepe! Molestiae officia pariatur
-                  dicta iste laborum qui a architecto quae, animi facere nulla,
-                  in cumque reprehenderit?
+                  Welcome to Dwelling Plans, our web app project developed
+                  during bootcamp. With Dwelling Plans, you can explore, choose,
+                  and purchase the floorplans of your dream homes. Built using
+                  Laravel, this application combines functionality with elegance
+                  to enhance your home planning experience. We hope you enjoy
+                  it!
                 </h5>
                 <button>
-                  <a href="#">See Live</a>
+                  <a href="https://dp-blmo.onrender.com/" target="_blank">
+                    See Live
+                  </a>
                 </button>
               </div>
             </div>
             <div className="work">
-              <img
-                src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="first project"
-              />
+              <a href="https://jehd061990.github.io/MP1/" target="_blank">
+                <img src="assets/destries.png" alt="first project" />
+              </a>
               <div className="details">
                 <h5>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  optio eaque repellat esse saepe! Molestiae officia pariatur
-                  dicta iste laborum qui a architecto quae, animi facere nulla,
-                  in cumque reprehenderit?
+                  Welcome to Destries, my MP1 project. The name Destries is a
+                  delightful blend of "desserts" and "pastries," reflecting our
+                  focus on delicious treats. This online store allows you to
+                  order the most delectable foods you crave. I hope you enjoy
+                  it!
                 </h5>
                 <button>
-                  <a href="#">See Live</a>
+                  <a href="https://jehd061990.github.io/MP1/" target="_blank">
+                    See Live
+                  </a>
                 </button>
               </div>
             </div>
             <div className="work">
-              <img
-                src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="first project"
-              />
+              <a href="https://jehd061990.github.io/mp2/" target="_blank">
+                <img src="assets/fg-pic.png" alt="first project" />
+              </a>
               <div className="details">
                 <h5>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  optio eaque repellat esse saepe! Molestiae officia pariatur
-                  dicta iste laborum qui a architecto quae, animi facere nulla,
-                  in cumque reprehenderit?
+                  Welcome to Food Gallery, our MP2 project. This app is designed
+                  to help you explore and choose recipes for any dish you
+                  prefer. In this project, I focused on the front end, while my
+                  partner handled the back end. We hope you enjoy using Food
+                  Gallery as much as we enjoyed creating it!
                 </h5>
                 <button>
-                  <a href="#">See Live</a>
+                  <a href="https://jehd061990.github.io/mp2/" target="_blank">
+                    See Live
+                  </a>
                 </button>
               </div>
             </div>
-            <div className="work">
-              <img
-                src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="first project"
-              />
-              <div className="details">
-                <h5>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  optio eaque repellat esse saepe! Molestiae officia pariatur
-                  dicta iste laborum qui a architecto quae, animi facere nulla,
-                  in cumque reprehenderit?
-                </h5>
-                <button>
-                  <a href="#">See Live</a>
-                </button>
-              </div>
-            </div>
-            <div className="work">
-              <img
-                src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="first project"
-              />
-              <div className="details">
-                <h5>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  optio eaque repellat esse saepe! Molestiae officia pariatur
-                  dicta iste laborum qui a architecto quae, animi facere nulla,
-                  in cumque reprehenderit?
-                </h5>
-                <button>
-                  <a href="#">See Live</a>
-                </button>
-              </div>
-            </div>
-            <div className="work">
-              <img
-                src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="first project"
-              />
-              <div className="details">
-                <h5>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  optio eaque repellat esse saepe! Molestiae officia pariatur
-                  dicta iste laborum qui a architecto quae, animi facere nulla,
-                  in cumque reprehenderit?
-                </h5>
-                <button>
-                  <a href="#">See Live</a>
-                </button>
-              </div>
-            </div>
-            <div className="work">
-              <img
-                src="https://penji.co/wp-content/uploads/2020/07/web_design_sample_1-.jpg"
-                alt="first project"
-              />
-              <div className="details">
-                <h5>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  optio eaque repellat esse saepe! Molestiae officia pariatur
-                  dicta iste laborum qui a architecto quae, animi facere nulla,
-                  in cumque reprehenderit?
-                </h5>
-                <button>
-                  <a href="#">See Live</a>
-                </button>
-              </div>
-            </div>
+
             <footer>
               <div>
                 Copyright{" "}

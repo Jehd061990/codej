@@ -52,7 +52,7 @@ const Contact = () => {
             <div className="contact-icons">
               <div className="cp margin settings">
                 <img src="assets/icon-cp.svg" alt="smarhone icon" />
-                <span>+63912345789</span>
+                <span>+639568539920</span>
               </div>
               <div className="phone settings">
                 <img src="assets/icon-phone.svg" alt="telephone icon" />
@@ -63,9 +63,23 @@ const Contact = () => {
                 <span>jehd.jehzer@gmail.com</span>
               </div>
               <div className="links">
-                <img src="assets/icon-messenger.svg" alt="fb messenger icon" />
-                <img src="assets/icon-linkedin.svg" alt="linkedin icon" />
-                <img src="assets/icon-github.svg" alt="github icon" />
+                <a href="https://www.facebook.com/jehdyyyy/" target="_blank">
+                  <img
+                    src="assets/icon-messenger.svg"
+                    alt="fb messenger icon"
+                  />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/jehdeiah-jandoc-261111237/"
+                  target="_blank"
+                >
+                  <img src="assets/icon-linkedin.svg" alt="linkedin icon" />
+                </a>
+
+                <a href="https://github.com/Jehd061990" target="_blank">
+                  <img src="assets/icon-github.svg" alt="github icon" />
+                </a>
               </div>
             </div>
             {isMessageSent ? (
