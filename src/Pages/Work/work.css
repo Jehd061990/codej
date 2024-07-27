@@ -378,11 +378,12 @@
 @media only screen and (max-width: 750px) {
   .work-section .works {
     width: 40em;
-    height: 300px;
+    text-align: center;
   }
 
   .work-section .works .wrapper .work img {
     width: 200px;
+    position: static;
   }
 
   .work-section .works .wrapper .work .details {
@@ -394,6 +395,7 @@
   }
 
   .work-section .works .wrapper .work button {
+    margin-top: 5px;
     padding: 8px;
   }
 
