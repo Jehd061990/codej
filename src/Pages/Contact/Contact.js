@@ -56,7 +56,7 @@ const Contact = () => {
               </div>
               <div className="phone settings">
                 <img src="assets/icon-phone.svg" alt="telephone icon" />
-                <span>082-222-3333</span>
+                <span>082-221-9572</span>
               </div>
               <div className="mail settings">
                 <img src="assets/icon-mail.svg" alt="mail icon" />
