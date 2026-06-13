@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext, useRef } from "react";
 import "./navbar.css";
 import ThemeContext from "../../Theme/Theme";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const { aboutNav, setAboutNav, workNav } = useContext(ThemeContext);
@@ -156,34 +156,41 @@ const Navbar = () => {
         </div>
         <ul className="desktop-nav" ref={navUlRef}>
           <li>
-            <Link
+            <NavLink
               to="/"
-              className={
-                workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+              end
+              className={({ isActive }) =>
+                `${
+                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                }${isActive ? " active-tab" : ""}`
               }
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/about"
-              className={
-                workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+              className={({ isActive }) =>
+                `${
+                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                }${isActive ? " active-tab" : ""}`
               }
             >
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
-              to="/work"
-              className={
-                workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+            <NavLink
+              to="/portfolio"
+              className={({ isActive }) =>
+                `${
+                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                }${isActive ? " active-tab" : ""}`
               }
             >
-              Work
-            </Link>
+              Portfolio
+            </NavLink>
           </li>
           <li>
             <Link
@@ -203,37 +210,44 @@ const Navbar = () => {
 
         <ul className="mobile-nav" ref={navUlRef}>
           <li>
-            <Link
+            <NavLink
               to="/"
-              className={
-                workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+              end
+              className={({ isActive }) =>
+                `${
+                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                }${isActive ? " active-tab" : ""}`
               }
               onClick={navBtn}
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/about"
-              className={
-                workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+              className={({ isActive }) =>
+                `${
+                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                }${isActive ? " active-tab" : ""}`
               }
               onClick={navBtn}
             >
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
-              to="/work"
-              className={
-                workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+            <NavLink
+              to="/portfolio"
+              className={({ isActive }) =>
+                `${
+                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                }${isActive ? " active-tab" : ""}`
               }
               onClick={navBtn}
             >
-              Work
-            </Link>
+              Portfolio
+            </NavLink>
           </li>
           <li>
             <Link

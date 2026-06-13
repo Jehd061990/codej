@@ -322,6 +322,7 @@ nav ul li .tab {
   /* transition: color 0.5s linear; */
 }
 
+
 nav ul li .tab.white {
   color: var(--white) !important;
 }
@@ -330,6 +331,18 @@ nav ul li .tab:hover {
   color: var(--black);
   font-weight: 800;
 }
+
+nav ul li .tab.active-tab {
+  color: var(--orange);
+  font-weight: 800;
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 4px;
+}
+
+nav ul li .tab.active-tab:hover {
+  color: var(--orange);
+}
+
 
 nav ul li .action {
   background-color: var(--white);
@@ -496,6 +509,17 @@ nav ul li .action.work-page:hover {
   nav ul li .tab:hover {
     color: var(--black);
     font-weight: 800;
+  }
+
+  nav ul li .tab.active-tab {
+    color: var(--orange);
+    font-weight: 800;
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 4px;
+  }
+
+  nav ul li .tab.active-tab:hover {
+    color: var(--orange);
   }
 
   nav ul li .action {

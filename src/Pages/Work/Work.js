@@ -62,6 +62,35 @@ const Work = () => {
         <div className="works invisible">
           <div className="wrapper">
             <div className="work">
+              <a href="https://sukicart-fe.onrender.com/" target="_blank">
+                <img src="assets/SukiGoPOS.png" alt="first project" />
+              </a>
+
+              <div className="details">
+                <h5>
+                  SukiGo is a cloud-based POS and business management platform
+                  that helps businesses manage sales, inventory, orders,
+                  customers, analytics, and multi-store operations through a
+                  single modern dashboard. Built using Next.js, Node.js,
+                  MongoDB, and Capacitor with a scalable SaaS architecture. Bellow is demo account credentials for you to explore the app: <br />
+                  <br />
+                  <span style={{ color: "var(--orange)" }}>
+                    Username: demo@gmail.com{" "}
+                  </span>{" "}
+                  <br />
+                  <span style={{ color: "var(--orange)" }}>
+                    Password: Secret123456!
+                  </span>
+                </h5>
+                <button>
+                  <a href="https://sukicart-fe.onrender.com/" target="_blank">
+                    See Live
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            <div className="work">
               <a href="https://uno-chat-app.onrender.com/" target="_blank">
                 <img src="assets/uno-chat.png" alt="first project" />
               </a>

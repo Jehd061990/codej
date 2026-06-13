@@ -240,7 +240,8 @@
 .work-section .works .wrapper .work {
   width: 100%;
   /* background-color: #4333fd; */
-  height: 250px;
+  /* height: 250px; */
+  min-height: 350px;
   position: relative;
 }
 
@@ -262,6 +263,7 @@
   width: 600px;
   height: 100%;
   /* background-color: var(--lightorange); */
+  /* min-height: 350px; */
   position: absolute;
   margin: auto;
   top: 0;
@@ -269,6 +271,9 @@
   right: 0;
   display: flex;
   justify-content: center;
+  gap: 20px ;
+  /* background-color: rgba(163, 26, 26, 0.8); */
+  /* margin-top: 50px */
 }
 
 .work-section .works .wrapper .work .details h5 {
