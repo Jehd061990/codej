@@ -33,7 +33,7 @@ const About = () => {
       },
       {
         threshold: 0.01,
-      }
+      },
     );
 
     sections.forEach((section) => {
@@ -42,7 +42,7 @@ const About = () => {
 
     // Observer for stakeholders s
     const fStkholders = document.querySelectorAll(
-      ".about-page .fourth .stakeholders img:nth-child(1)"
+      ".about-page .fourth .stakeholders img:nth-child(1)",
     );
 
     const fStake = new IntersectionObserver(
@@ -56,7 +56,7 @@ const About = () => {
       },
       {
         threshold: 0.01,
-      }
+      },
     );
 
     fStkholders.forEach((fstkholder) => {
@@ -64,7 +64,7 @@ const About = () => {
     });
 
     const sStkholders = document.querySelectorAll(
-      ".about-page .fourth .stakeholders img:nth-child(2)"
+      ".about-page .fourth .stakeholders img:nth-child(2)",
     );
 
     const sStake = new IntersectionObserver(
@@ -78,7 +78,7 @@ const About = () => {
       },
       {
         threshold: 0.01,
-      }
+      },
     );
 
     sStkholders.forEach((fstkholder) => {
@@ -116,10 +116,10 @@ const About = () => {
       <div className="second section container invisible">
         <div className="wrapper">
           <h3>
-            My journey into the world of coding began in 2022, sparked by my
-            fascination with digital assets such as 3D models and NFTs.
-            Curiosity led me to wonder if I could create and sell my own digital
-            creations online.
+            My journey into the world of coding began in 2010, sparked by my
+            fascination with digital assets such as 3D models and web
+            applications. Curiosity led me to wonder if I could create and sell
+            my own digital creations online.
           </h3>
 
           <div className="models-slider bellow blurred seen">
