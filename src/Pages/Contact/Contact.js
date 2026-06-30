@@ -24,7 +24,7 @@ const Contact = () => {
         form.current,
         {
           publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
-        }
+        },
       )
       .then(
         () => {
@@ -33,7 +33,7 @@ const Contact = () => {
         (error) => {
           console.log("FAILED...", error.text);
           alert("Failed to send");
-        }
+        },
       );
   };
 
@@ -63,7 +63,11 @@ const Contact = () => {
                 <span>jehd.jehzer@gmail.com</span>
               </div>
               <div className="links">
-                <a href="https://www.facebook.com/jehdyyyy/" target="_blank">
+                <a
+                  href="https://www.facebook.com/jehdyyyy/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="assets/icon-messenger.svg"
                     alt="fb messenger icon"
@@ -73,11 +77,16 @@ const Contact = () => {
                 <a
                   href="https://www.linkedin.com/in/jehdeiah-jandoc-261111237/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img src="assets/icon-linkedin.svg" alt="linkedin icon" />
                 </a>
 
-                <a href="https://github.com/Jehd061990" target="_blank">
+                <a
+                  href="https://github.com/Jehd061990"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src="assets/icon-github.svg" alt="github icon" />
                 </a>
               </div>

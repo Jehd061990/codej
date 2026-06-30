@@ -17,7 +17,14 @@
 /* --------------------------------------------------------- */
 
 .about-page {
-  background-color: var(--white);
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.08),
+    rgba(56, 189, 248, 0.05)
+  );
+  color: var(--text);
+  min-height: 100vh;
+  padding: 110px 0 60px;
 }
 
 .about-page .welcome {
@@ -128,19 +135,24 @@
 }
 
 .about-page .wrapper {
-  width: 50em;
-  height: 30em;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  width: min(900px, calc(100% - 32px));
+  min-height: 30em;
+  position: relative;
+  margin: 0 auto;
+  padding: 36px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 32px;
+  background: rgba(7, 17, 31, 0.72);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
 }
 
 .about-page .wrapper h3 {
-  margin-top: 10%;
+  margin-top: 6%;
   font-family: var(--primary);
+  line-height: 1.75;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
 }
 
 .about-page .intro .wrapper .profile-pic {

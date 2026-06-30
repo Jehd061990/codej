@@ -1,4 +1,10 @@
-import React, { useEffect, useState, useContext, useRef } from "react";
+import React, {
+  useEffect,
+  useState,
+  useContext,
+  useRef,
+  useCallback,
+} from "react";
 import "./navbar.css";
 import ThemeContext from "../../Theme/Theme";
 import { Outlet, Link, NavLink } from "react-router-dom";
@@ -18,12 +24,12 @@ const Navbar = () => {
   const expandNavBotBarSpanRef = useRef(null);
   const navUlRef = useRef(null);
 
-  const enableScroll = () => {
+  const enableScroll = useCallback(() => {
     if (navRef.current && navBgRef.current && navUlRef.current) {
       const navScrolled = navRef.current;
       const navBg = navBgRef.current;
       const ulAbout = navUlRef.current.querySelectorAll(
-        ".about-page nav ul li .tab"
+        ".about-page nav ul li .tab",
       );
 
       if (window.pageYOffset > 0) {
@@ -48,7 +54,7 @@ const Navbar = () => {
         setAboutNav(true);
       }
     }
-  };
+  }, [setAboutNav]);
 
   useEffect(() => {
     window.onscroll = enableScroll;
@@ -161,7 +167,11 @@ const Navbar = () => {
               end
               className={({ isActive }) =>
                 `${
-                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                  workNav
+                    ? "tab work-page"
+                    : aboutNav
+                      ? "tab about-page"
+                      : "tab"
                 }${isActive ? " active-tab" : ""}`
               }
             >
@@ -173,7 +183,11 @@ const Navbar = () => {
               to="/about"
               className={({ isActive }) =>
                 `${
-                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                  workNav
+                    ? "tab work-page"
+                    : aboutNav
+                      ? "tab about-page"
+                      : "tab"
                 }${isActive ? " active-tab" : ""}`
               }
             >
@@ -185,7 +199,11 @@ const Navbar = () => {
               to="/portfolio"
               className={({ isActive }) =>
                 `${
-                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                  workNav
+                    ? "tab work-page"
+                    : aboutNav
+                      ? "tab about-page"
+                      : "tab"
                 }${isActive ? " active-tab" : ""}`
               }
             >
@@ -199,8 +217,8 @@ const Navbar = () => {
                 workNav
                   ? "action work-page"
                   : aboutNav
-                  ? "action about-page"
-                  : "action"
+                    ? "action about-page"
+                    : "action"
               }
             >
               Hire me
@@ -215,7 +233,11 @@ const Navbar = () => {
               end
               className={({ isActive }) =>
                 `${
-                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                  workNav
+                    ? "tab work-page"
+                    : aboutNav
+                      ? "tab about-page"
+                      : "tab"
                 }${isActive ? " active-tab" : ""}`
               }
               onClick={navBtn}
@@ -228,7 +250,11 @@ const Navbar = () => {
               to="/about"
               className={({ isActive }) =>
                 `${
-                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                  workNav
+                    ? "tab work-page"
+                    : aboutNav
+                      ? "tab about-page"
+                      : "tab"
                 }${isActive ? " active-tab" : ""}`
               }
               onClick={navBtn}
@@ -241,7 +267,11 @@ const Navbar = () => {
               to="/portfolio"
               className={({ isActive }) =>
                 `${
-                  workNav ? "tab work-page" : aboutNav ? "tab about-page" : "tab"
+                  workNav
+                    ? "tab work-page"
+                    : aboutNav
+                      ? "tab about-page"
+                      : "tab"
                 }${isActive ? " active-tab" : ""}`
               }
               onClick={navBtn}
@@ -256,8 +286,8 @@ const Navbar = () => {
                 workNav
                   ? "action work-page"
                   : aboutNav
-                  ? "action about-page"
-                  : "action"
+                    ? "action about-page"
+                    : "action"
               }
               onClick={navBtn}
             >

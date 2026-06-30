@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./hero.css";
 import ThemeContext from "../../Components/Theme/Theme";
 
@@ -92,11 +93,18 @@ const Hero = () => {
             >
               Hi, I'm <span>Jehd</span>
               <br />
-              and I am a <br />
-              <span>Passionate Web Developer,</span>
+              I build <br />
+              <span>modern, high-performing websites</span>
               <br />
-              offering <br />
-              <span>Innovative Web Solutions.</span>
+              that help brands stand out and convert.
+              <div className="hero-actions">
+                <Link to="/contact" className="primary-cta">
+                  Hire me
+                </Link>
+                <Link to="/portfolio" className="secondary-cta">
+                  View work
+                </Link>
+              </div>
             </div>
 
             <div
